@@ -10,28 +10,28 @@
        
             <div class="p-5">
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                <h1 class="h4 text-gray-900 mb-4">Create an Robot Account!</h1>
               </div>
               <form class="user" method="post" action="<?= base_url('auth/Register');?>">
                 <div class="form-group row"> 
                   
-                    <input type="text" name="name" class="form-control form-control-user" id="exampleFullname" placeholder="Fullname">
+                    <input type="text" name="name" value="<?=set_value('name');?>"class="form-control form-control-user" id="exampleFullname" placeholder="Fullname">
                     <?= form_error('name','<small class="text-danger pl-3">','</small>')?>
                   </div>
                 
                 <div class="form-group row">
                  
-                  <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                  <input type="email" name="email" value="<?=set_value('email');?>" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
                   <?= form_error('email','<small class="text-danger pl-3">','</small>')?>
                 </div>
                
                 <div class="form-group row">
                   <div class="col-sm-15">
-                    <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                    <input type="password" name="password1" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     <?= form_error('password','<small class="text-danger pl-3">','</small>')?>
                   </div>
                   <div class="col-sm-15">
-                    <input type="password" name="repeat_password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                    <input type="password" name="password2" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
                     <?= form_error('repeat_password','<small class="text-danger pl-3">','</small>')?>
                   </div>
                 </div>
